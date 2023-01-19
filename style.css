@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&display=swap");
+}
+*:root {
+  --color-primary: #1A202C;
+  --font-primary: "Lato", sans-serif;
+  --font-secundary: "Merriweather", serif;
+}
+* .container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+* .container .illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #F7FAFC;
+}
+* .container .illustration img {
+  width: 350px;
+}
+* .container .login {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: #FFFFFF;
+  color: var(--color-primary);
+}
+* .container .login .welcome {
+  position: relative;
+  top: 100px;
+  left: 155px;
+  font-family: var(--font-secundary);
+}
+* .container .login .title {
+  position: relative;
+  top: 103px;
+  left: 155px;
+  font-family: var(--font-secundary);
+  font-size: 26px;
+  font-weight: 700;
+}
+* .container .login .email {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 140px;
+  left: 155px;
+  font-family: var(--font-primary);
+}
+* .container .login .email .label-email {
+  font-size: 15px;
+}
+* .container .login .email input {
+  width: 320px;
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #E8E8E8;
+}
+* .container .login .password {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 150px;
+  left: 155px;
+  width: 370px;
+  font-family: var(--font-primary);
+}
+* .container .login .password .label-password {
+  font-size: 15px;
+}
+* .container .login .password input {
+  width: 320px;
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #E8E8E8;
+}
+* .container .login .information {
+  display: flex;
+  font-size: 14px;
+}
+* .container .login .information .checkbox {
+  position: relative;
+  top: 170px;
+  left: 155px;
+  font-family: var(--font-primary);
+}
+* .container .login .information .checkbox span {
+  position: relative;
+  top: -1px;
+}
+* .container .login .information .passowrd-error {
+  position: relative;
+  top: 170px;
+  left: 198px;
+  font-family: var(--font-primary);
+  color: #2B6CB0;
+  cursor: pointer;
+}
+* .container .login .button-enter {
+  position: relative;
+  top: 190px;
+  left: 155px;
+}
+* .container .login .button-enter button {
+  width: 320px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #04C35C;
+  font-family: var(--font-primary);
+  color: #FFFFFF;
+  cursor: pointer;
+}
+* .container .login .button-google {
+  position: relative;
+  top: 200px;
+  left: 155px;
+}
+* .container .login .button-google button {
+  width: 320px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  font-family: var(--font-primary);
+  color: #FFFFFF;
+  cursor: pointer;
+}
+* .container .login .button-google .fa-brands {
+  font-size: 15px;
+  margin-right: 5px;
+}
+* .container .login .create-cadrast {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+  font-size: 14px;
+  font-family: var(--font-primary);
+}
+* .container .login .create-cadrast .cadrast {
+  color: #2B6CB0;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
