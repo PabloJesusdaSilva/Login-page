@@ -4,56 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="image/right-to-bracket-solid.svg" type="favicon">
+    <title>Login</title>
 </head>
 <body>
-    
-    <div class="container">
-        <div class="illustration">
-            <div class="image"><img src="image/image.svg" alt="image-illustration"></div>
-        </div>
-        
-        <div class="login">
-            <span class="welcome">Bem vindo de volta</span>
-            <h1 class="title">Faça login na sua conta</h1>
 
-            <div class="email">
-                <label class="label-email">E-mail</label>
-                <input class="input-email" type="email">
+    <main>
+        <article class="content-img">
+            <img src="image/image.svg" alt="imagem ilustrativa">
+        </article>
+
+        <article>
+            <div class="form-tex">
+                <span> Bem vindo de volta</span>
+                <h1> Faça login na sua conta</h1>
             </div>
 
-            <div class="password">
-                <label class="label-password">Senha</label>
-                <input class="input-password" type="passsword">
-            </div>
-
-            <div class="information">
-
-                <div class="checkbox">
-                    <input class="input-checkbox" type="checkbox">
-                    <span>Lembre de mim</span>
-                </div>
+            <div class="form-input">
+                <label> Email</label>
+                <input type="email" placeholder="Digite o seu email">
                 
-                <div class="passowrd-error">Esqueceu sua senha?</div>
-            </div>
-            
-            <div class="button-enter">
-                <button>Entrar</button>
-            </div>
-            
-            <div class="button-google">
-                <button> <i class="fa-brands fa-google"></i> Ou faça login com o Google</button>
+                <label> Senha</label>
+                <input type="password" placeholder="Digite a sua senha">
             </div>
 
-            <div class="create-cadrast">
+            <div class="new-password">
+                <input type="checkbox" aria-placeholder="Lembre de mim">
+                <p>Esqueceu a sua senha?</p>
+            </div>
+
+            <div class="form-button">
+                <button> Entrar</button>
+                <button> Ou faça login no Google</button>
+            </div>
+
+            <div class="form-cadrast">
                 <span>Não tem uma conta?</span>
-                <span class="cadrast">Cadastre-se</span>
+                <span> Cadastre-se</span>
             </div>
-
-        </div>
-    </div>
+        </article>
+    </main>
 
     <script src="https://kit.fontawesome.com/02046696f9.js" crossorigin="anonymous"></script>
 </body>
