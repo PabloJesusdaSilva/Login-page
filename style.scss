@@ -10,4 +10,177 @@
         --font-primary: 'Lato', sans-serif;
         --font-secundary: 'Merriweather', serif;
     } 
+<<<<<<< HEAD
 }
+=======
+
+    .container {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+
+        .illustration {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            background-color: #F7FAFC;
+
+            img {
+                width: 350px;
+            }    
+        }
+
+        .login {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            background-color: #FFFFFF;
+            color: var(--color-primary);
+            
+            .welcome {
+                position: relative;
+                top: 100px;
+                left: 155px;
+                font-family: var(--font-secundary);
+            }
+            
+            .title {
+                position: relative;
+                top: 103px;
+                left: 155px;
+                font-family: var(--font-secundary);
+                font-size: 26px;
+                font-weight: 700;
+            }
+
+            .email {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                top: 140px;
+                left: 155px;
+                font-family: var(--font-primary);
+
+                .label-email {
+                    font-size: 15px;
+                }
+
+                input {
+                    width: 320px;
+                    height: 30px;
+                    margin-top: 5px;
+                    border-radius: 5px;
+                    border: 1px solid #E8E8E8;
+                }
+            }
+
+            .password {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                top: 150px;
+                left: 155px;
+                width: 370px;
+                font-family: var(--font-primary);
+
+                .label-password {
+                    font-size: 15px;
+                }
+                
+                input {
+                    width: 320px;
+                    height: 30px;
+                    margin-top: 5px;
+                    border-radius: 5px;
+                    border: 1px solid #E8E8E8;
+
+                }
+            }
+            
+            .information {
+                display: flex;
+                font-size: 14px;
+
+                .checkbox {
+                    position: relative;
+                    top: 170px;
+                    left: 155px;
+                    font-family: var(--font-primary);
+
+                    span {
+                        position: relative;
+                        top: -1px;
+                    }
+                
+                }
+            
+                .passowrd-error {
+                    position: relative;
+                    top: 170px;
+                    left: 198px;
+                    font-family: var(--font-primary);
+                    color: #2B6CB0;
+                    cursor: pointer;
+                }
+            }   
+            
+            .button-enter {
+                position: relative;
+                top: 190px;
+                left: 155px;
+                
+                button {
+                    width: 320px;
+                    height: 40px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #04C35C;
+                    font-family: var(--font-primary);
+                    color: #FFFFFF;
+                    cursor: pointer;
+                }
+            }
+            
+            .button-google {
+                position: relative;
+                top: 200px;
+                left: 155px;
+                
+                button {
+                    width: 320px;
+                    height: 40px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: var(--color-primary);
+                    font-family: var(--font-primary);
+                    color: #FFFFFF;
+                    cursor: pointer;
+                }
+
+                .fa-brands {
+                    font-size:  15px;
+                    margin-right: 5px;
+                }
+            }
+            
+            .create-cadrast {
+                display: flex;
+                justify-content: center;
+                margin-top: 300px;
+                font-size: 14px;
+                font-family: var(--font-primary);
+
+                .cadrast {
+                    color: #2B6CB0;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 414px) {
+        
+    }
+}
+>>>>>>> b8533db02be52d3c3d7d3094b0cd3078c1f0f70a
