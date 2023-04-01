@@ -2,183 +2,98 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 }
 *:root {
   --color-primary: #1A202C;
   --font-primary: "Lato", sans-serif;
   --font-secundary: "Merriweather", serif;
 }
-* .container {
+* main {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  font-family: "Josefin Sans", sans-serif;
 }
-* .container .illustration {
+* main .content-img {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
-  background-color: #F7FAFC;
+  height: 100vh;
 }
-* .container .illustration img {
-  width: 350px;
+* main .content-img img {
+  width: 450px;
 }
-* .container .login {
+* main .content-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 50%;
-  background-color: #FFFFFF;
+  height: 100vh;
+  margin-top: 80px;
+}
+* main .content-form .form-text {
+  font-size: 18px;
   color: var(--color-primary);
 }
-* .container .login .welcome {
-  position: relative;
-  top: 100px;
-  left: 155px;
-  font-family: var(--font-secundary);
+* main .content-form .form-text h1 {
+  margin-top: 10px;
 }
-* .container .login .title {
-  position: relative;
-  top: 103px;
-  left: 155px;
-  font-family: var(--font-secundary);
-  font-size: 26px;
+* main .content-form .form-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+* main .content-form .form-input input {
+  width: 300px;
+  height: 40px;
+  margin: 6px 0 15px 0;
+  border-radius: 5px;
+  border: 1px solid #8f8f8f;
   font-weight: 700;
 }
-* .container .login .email {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 140px;
-  left: 155px;
-  font-family: var(--font-primary);
+* main .content-form .form-input input::-moz-placeholder {
+  padding: 10px;
 }
-* .container .login .email .label-email {
-  font-size: 15px;
+* main .content-form .form-input input::placeholder {
+  padding: 10px;
 }
-* .container .login .email input {
-  width: 320px;
-  height: 40px;
-  margin-top: 5px;
-  border-radius: 5px;
-  border: 1px solid #E8E8E8;
-}
-* .container .login .password {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 150px;
-  left: 155px;
-  width: 370px;
-  font-family: var(--font-primary);
-}
-* .container .login .password .label-password {
-  font-size: 15px;
-}
-* .container .login .password input {
-  width: 320px;
-  height: 40px;
-  margin-top: 5px;
-  border-radius: 5px;
-  border: 1px solid #E8E8E8;
-}
-* .container .login .information {
+* main .content-form .new-password {
   display: flex;
   font-size: 14px;
 }
-* .container .login .information .checkbox {
-  position: relative;
-  top: 170px;
-  left: 155px;
-  font-family: var(--font-primary);
+* main .content-form .new-password span {
+  margin-right: 14px;
 }
-* .container .login .information .checkbox span {
-  position: relative;
-  top: -1px;
+* main .content-form .new-password p {
+  color: #13468f;
 }
-* .container .login .information .passowrd-error {
-  position: relative;
-  top: 170px;
-  left: 198px;
-  font-family: var(--font-primary);
-  color: #2B6CB0;
-  cursor: pointer;
+* main .content-form .form-button {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
-* .container .login .button-enter {
-  position: relative;
-  top: 190px;
-  left: 155px;
-}
-* .container .login .button-enter button {
-  width: 320px;
-  height: 40px;
+* main .content-form .form-button button {
+  width: 300px;
+  height: 34px;
   border: none;
   border-radius: 5px;
-  background-color: #04C35C;
-  font-family: var(--font-primary);
-  color: #FFFFFF;
-  cursor: pointer;
+  color: #fff;
 }
-* .container .login .button-google {
-  position: relative;
-  top: 200px;
-  left: 155px;
+* main .content-form .form-button button:first-child {
+  margin-bottom: 15px;
+  background-color: #41A978;
 }
-* .container .login .button-google button {
-  width: 320px;
-  height: 40px;
-  border: none;
-  border-radius: 5px;
+* main .content-form .form-button button:last-child {
   background-color: var(--color-primary);
-  font-family: var(--font-primary);
-  color: #FFFFFF;
-  cursor: pointer;
 }
-* .container .login .button-google .fa-brands {
-  font-size: 15px;
-  margin-right: 5px;
+* main .content-form .form-record {
+  margin-top: 100px;
 }
-* .container .login .create-cadrast {
-  display: flex;
-  justify-content: center;
-  margin-top: 300px;
+* main .content-form .form-record span {
   font-size: 14px;
-  font-family: var(--font-primary);
 }
-* .container .login .create-cadrast .cadrast {
-  color: #2B6CB0;
-  cursor: pointer;
-}
-@media (max-width: 414px) {
-  * .illustration {
-    visibility: hidden;
-  }
-  * .login {
-    position: absolute;
-    width: 414px;
-    left: -100px;
-  }
-  * .login .welcome {
-    position: absolute;
-    top: 10px;
-    font-size: 20px;
-  }
-  * .login .title {
-    width: 400px;
-    font-size: 32px;
-  }
-  * .login .information {
-    position: absolute;
-    top: 170px;
-    width: 320px;
-  }
-  * .login .information .checkbox {
-    width: 200px;
-    margin-top: 20px;
-  }
-  * .login .information .passowrd-error {
-    position: absolute;
-    right: 100px;
-    margin-top: 20px;
-  }
+* main .content-form .form-record span:last-child {
+  color: #13468f;
 }/*# sourceMappingURL=style.css.map */

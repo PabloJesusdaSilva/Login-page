@@ -3,184 +3,120 @@
     padding: 0;
     box-sizing: border-box;
 
-    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 
     &:root {
         --color-primary: #1A202C;
         --font-primary: 'Lato', sans-serif;
         --font-secundary: 'Merriweather', serif;
     } 
-<<<<<<< HEAD
-}
-=======
 
-    .container {
+    main {
         display: flex;
         width: 100%;
-        height: 100vh;
+        height: 100%;
+        font-family: 'Josefin Sans', sans-serif;
 
-        .illustration {
+        .content-img {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 50%;
-            background-color: #F7FAFC;
+            height: 100vh;
 
             img {
-                width: 350px;
-            }    
+                width: 450px;
+            }
         }
 
-        .login {
+        .content-form {
             display: flex;
             flex-direction: column;
+            align-items: center;
             width: 50%;
-            background-color: #FFFFFF;
-            color: var(--color-primary);
+            height: 100vh;
+            margin-top: 80px;
+
+            .form-text {
+                font-size: 18px;
+                color: var(--color-primary);
+
+                h1 {
+                    margin-top: 10px;
+                }
+
             
-            .welcome {
-                position: relative;
-                top: 100px;
-                left: 155px;
-                font-family: var(--font-secundary);
-            }
-            
-            .title {
-                position: relative;
-                top: 103px;
-                left: 155px;
-                font-family: var(--font-secundary);
-                font-size: 26px;
-                font-weight: 700;
-            }
-
-            .email {
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                top: 140px;
-                left: 155px;
-                font-family: var(--font-primary);
-
-                .label-email {
-                    font-size: 15px;
-                }
-
-                input {
-                    width: 320px;
-                    height: 30px;
-                    margin-top: 5px;
-                    border-radius: 5px;
-                    border: 1px solid #E8E8E8;
-                }
-            }
-
-            .password {
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                top: 150px;
-                left: 155px;
-                width: 370px;
-                font-family: var(--font-primary);
-
-                .label-password {
-                    font-size: 15px;
-                }
                 
-                input {
-                    width: 320px;
-                    height: 30px;
-                    margin-top: 5px;
-                    border-radius: 5px;
-                    border: 1px solid #E8E8E8;
-
-                }
             }
-            
-            .information {
+
+            .form-input {
                 display: flex;
-                font-size: 14px;
+                flex-direction: column;
+                margin-top: 40px;
 
-                .checkbox {
-                    position: relative;
-                    top: 170px;
-                    left: 155px;
-                    font-family: var(--font-primary);
+                input {
+                    width: 300px;
+                    height: 40px;
+                    margin: 6px 0 15px 0;
+                    border-radius: 5px;
+                    border: 1px solid #8f8f8f;
+                    font-weight: 700;
 
-                    span {
-                        position: relative;
-                        top: -1px;
+                    &::placeholder {
+                        padding: 10px;
                     }
-                
-                }
-            
-                .passowrd-error {
-                    position: relative;
-                    top: 170px;
-                    left: 198px;
-                    font-family: var(--font-primary);
-                    color: #2B6CB0;
-                    cursor: pointer;
-                }
-            }   
-            
-            .button-enter {
-                position: relative;
-                top: 190px;
-                left: 155px;
-                
-                button {
-                    width: 320px;
-                    height: 40px;
-                    border: none;
-                    border-radius: 5px;
-                    background-color: #04C35C;
-                    font-family: var(--font-primary);
-                    color: #FFFFFF;
-                    cursor: pointer;
                 }
             }
-            
-            .button-google {
-                position: relative;
-                top: 200px;
-                left: 155px;
-                
-                button {
-                    width: 320px;
-                    height: 40px;
-                    border: none;
-                    border-radius: 5px;
-                    background-color: var(--color-primary);
-                    font-family: var(--font-primary);
-                    color: #FFFFFF;
-                    cursor: pointer;
-                }
 
-                .fa-brands {
-                    font-size:  15px;
-                    margin-right: 5px;
-                }
-            }
-            
-            .create-cadrast {
+            .new-password {
                 display: flex;
-                justify-content: center;
-                margin-top: 300px;
                 font-size: 14px;
-                font-family: var(--font-primary);
 
-                .cadrast {
-                    color: #2B6CB0;
-                    cursor: pointer;
+                span {
+                    margin-right: 14px;
+                }
+                
+                p {
+                    color: #13468f;
+                }
+                
+            }
+
+            .form-button {
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+                
+                button {
+                    width: 300px;
+                    height: 34px;
+                    border: none;
+                    border-radius: 5px;
+                    color: #fff; 
+                    
+                    &:first-child {
+                        margin-bottom: 15px;
+                        background-color: #41A978;
+                    }
+
+                    &:last-child {
+                        background-color: var(--color-primary);
+                    }
+                }
+            }
+
+            .form-record {
+                margin-top: 100px;
+                
+                span {
+                    font-size: 14px;
+                    
+                    &:last-child {
+                        color: #13468f;
+                    }
                 }
             }
         }
     }
 
-    @media (max-width: 414px) {
-        
-    }
 }
->>>>>>> b8533db02be52d3c3d7d3094b0cd3078c1f0f70a
