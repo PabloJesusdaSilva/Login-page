@@ -32,10 +32,10 @@
         .content-form {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
             width: 50%;
             height: 100vh;
-            margin-top: 80px;
 
             .form-text {
                 font-size: 18px;
@@ -96,7 +96,7 @@
                     
                     &:first-child {
                         margin-bottom: 15px;
-                        background-color: #41A978;
+                        background-color: #04C35C;
                     }
 
                     &:last-child {
