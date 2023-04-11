@@ -58,12 +58,13 @@
                     width: 300px;
                     height: 40px;
                     margin: 6px 0 15px 0;
+                    padding-left: 10px;
                     border-radius: 5px;
                     border: 1px solid #8f8f8f;
                     font-weight: 700;
 
-                    &::placeholder {
-                        padding: 10px;
+                    &:focus {
+                        padding-left: 10px;
                     }
                 }
             }
@@ -73,7 +74,7 @@
                 font-size: 14px;
 
                 span {
-                    margin-right: 14px;
+                    margin: 0 22px 0 10px;
                 }
                 
                 p {
@@ -89,7 +90,7 @@
                 
                 button {
                     width: 300px;
-                    height: 34px;
+                    height: 40px;
                     border: none;
                     border-radius: 5px;
                     color: #fff; 
