@@ -9,43 +9,49 @@
   --font-primary: "Lato", sans-serif;
   --font-secundary: "Merriweather", serif;
 }
-* main {
+* body {
+  font-family: "Josefin Sans", sans-serif;
+}
+* body main {
   display: flex;
   width: 100%;
   height: 100%;
-  font-family: "Josefin Sans", sans-serif;
 }
-* main .content-img {
+* body main .content-img {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
   height: 100vh;
 }
-* main .content-img img {
+* body main .content-img img {
   width: 450px;
 }
-* main .content-form {
+* body main .content-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 50%;
   height: 100vh;
+  background-color: #fff;
 }
-* main .content-form .form-text {
+* body main .content-form .form-text {
   font-size: 18px;
   color: var(--color-primary);
 }
-* main .content-form .form-text h1 {
+* body main .content-form .form-text h1 {
   margin-top: 10px;
 }
-* main .content-form .form-input {
+* body main .content-form .form-input {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
 }
-* main .content-form .form-input input {
+* body main .content-form .form-input label {
+  font-weight: 700;
+}
+* body main .content-form .form-input input {
   width: 300px;
   height: 40px;
   margin: 6px 0 15px 0;
@@ -54,44 +60,52 @@
   border: 1px solid #8f8f8f;
   font-weight: 700;
 }
-* main .content-form .form-input input:focus {
+* body main .content-form .form-input input:focus {
   padding-left: 10px;
 }
-* main .content-form .new-password {
+* body main .content-form .new-password {
   display: flex;
   font-size: 14px;
 }
-* main .content-form .new-password span {
+* body main .content-form .new-password span {
   margin: 0 22px 0 10px;
 }
-* main .content-form .new-password p {
-  color: #13468f;
+* body main .content-form .new-password p {
+  color: #36619e;
 }
-* main .content-form .form-button {
+* body main .content-form .form-button {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
 }
-* main .content-form .form-button button {
+* body main .content-form .form-button button {
   width: 300px;
   height: 40px;
   border: none;
   border-radius: 5px;
   color: #fff;
+  transition: all 400ms;
 }
-* main .content-form .form-button button:first-child {
+* body main .content-form .form-button button i {
+  font-size: 17px;
+  margin-right: 5px;
+}
+* body main .content-form .form-button button:first-child {
   margin-bottom: 15px;
   background-color: #04C35C;
 }
-* main .content-form .form-button button:last-child {
+* body main .content-form .form-button button:last-child {
   background-color: var(--color-primary);
 }
-* main .content-form .form-record {
+* body main .content-form .form-button button:hover {
+  box-shadow: 5px 5px 0px #4a4e57;
+}
+* body main .content-form .form-record {
   margin-top: 100px;
 }
-* main .content-form .form-record span {
+* body main .content-form .form-record span {
   font-size: 14px;
 }
-* main .content-form .form-record span:last-child {
-  color: #13468f;
+* body main .content-form .form-record span:last-child {
+  color: #36619e;
 }/*# sourceMappingURL=style.css.map */
