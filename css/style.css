@@ -113,7 +113,9 @@
 * body main .content-form .form-record span {
   font-size: 14px;
 }
-* body main .content-form .form-record span:last-child {
+* body main .content-form .form-record a {
+  text-decoration: none;
+  font-weight: bold;
   color: #2B6CB0;
   cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

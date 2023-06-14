@@ -134,10 +134,13 @@
                     span {
                         font-size: 14px;
 
-                        &:last-child {
-                            color: #2B6CB0;
-                            cursor: pointer;
-                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: #2B6CB0;
+                        cursor: pointer;
                     }
                 }
             }

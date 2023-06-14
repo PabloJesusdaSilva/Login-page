@@ -12,7 +12,7 @@
 
     <main>
         <article class="content-img">
-            <img src="image/image.svg" alt="imagem ilustrativa">
+            <img src="image/image.svg" alt="imagem ilustrativa" data-test="image">
         </article>
 
         <article class="content-form">
@@ -23,14 +23,14 @@
 
             <div class="form-input">
                 <label> Email</label>
-                <input type="email" placeholder="Digite o seu email">
+                <input type="email" placeholder="Digite o seu email" data-test="email">
 
                 <label> Senha</label>
-                <input type="password" placeholder="Digite a sua senha">
+                <input type="password" placeholder="Digite a sua senha" data-test="password">
             </div>
 
             <div class="new-password">
-                <input class="checkbox" type="checkbox">
+                <input class="checkbox" type="checkbox" data-test="checkbox">
                 <span>Lembre de mim</span>
                 <p>Esqueceu a sua senha?</p>
             </div>
@@ -42,7 +42,7 @@
 
             <div class="form-record">
                 <span>Não tem uma conta?</span>
-                <span> Cadastre-se</span>
+                <a href="new-register.html" data-test="new-register">Cadastre-se</a>
             </div>
         </article>
     </main>
