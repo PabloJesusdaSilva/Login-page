@@ -103,7 +103,7 @@
                         border: none;
                         border-radius: 5px;
                         color: #fff;
-                        transition: all 400ms;
+                        transition: all 500ms;
 
                         i {
                             font-size: 17px;
@@ -123,6 +123,7 @@
 
                         &:hover {
                             box-shadow: 5px 5px 0px #4a4e57;
+                            transform: translateY(-3px);
                         }
                     }
                 }

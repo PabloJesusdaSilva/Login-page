@@ -88,7 +88,7 @@
   border: none;
   border-radius: 5px;
   color: #fff;
-  transition: all 400ms;
+  transition: all 500ms;
 }
 * body main .content-form .form-button button i {
   font-size: 17px;
@@ -105,6 +105,7 @@
 }
 * body main .content-form .form-button button:hover {
   box-shadow: 5px 5px 0px #4a4e57;
+  transform: translateY(-3px);
 }
 * body main .content-form .form-record {
   margin-top: 100px;
